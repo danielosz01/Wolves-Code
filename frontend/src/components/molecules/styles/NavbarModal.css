@@ -1,0 +1,139 @@
+/* --------------------------modal styles------------------------------ */
+/* container */
+div.divModalContact {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+div.divModalContact div.modal-content {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+/* content */
+div.divModalContact button.buttonModalContact {
+  width: 30px;
+  min-height: 30px !important;
+  max-height: 31px;
+  background-color: #ef1d69;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+div.divModalContact button.buttonModalContact p {
+  display: none;
+}
+
+div.divModalContact button.buttonModalContact:after {
+  content: "";
+  width: 3px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+div.divModalContact button.buttonModalContact:before {
+  content: "";
+  width: 3px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* distribution */
+div.divModalContact div.modal-content {
+  padding: 50px 20px;
+  margin: 0;
+}
+
+div.divModalContact button.buttonModalContact {
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+/* -------------- media querys --------------------*/
+@media only screen and (min-width: 768px) {
+  /* --------------------------modal styles------------------------------ */
+  /* container */
+  div.fade {
+    padding: 0;
+    display: flex !important;
+    justify-content: center;
+  }
+
+  div.divModalContact {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.divModalContact div.modal-content {
+    min-width: 620px;
+    height: 580px;
+    margin: 0;
+    border-radius: 15px;
+    overflow: scroll;
+  }
+
+  div.divModalContact div.modal-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: none;
+  }
+  div.divModalContact div.modal-content::-webkit-scrollbar-corner {
+    background-color: none;
+  }
+  div.divModalContact div.modal-content::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  div.divModalContact div.modal-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a7a7aa;
+  }
+
+  /* content */
+  div.divModalContact button.buttonModalContact {
+    width: 30px;
+    min-height: 30px !important;
+  }
+
+  /* distribution */
+  div.divModalContact div.modal-content {
+    padding: 50px;
+    margin: 0;
+  }
+
+  div.divModalContact button.buttonModalContact {
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* --------------------------modal styles------------------------------ */
+  /* container */
+  div.divModalContact div.modal-content {
+    min-width: 860px;
+    height: 600px;
+  }
+
+  div.divModalContact div.modal-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: none;
+  }
+}

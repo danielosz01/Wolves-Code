@@ -1,0 +1,71 @@
+/*----------------- styles ----------------------------*/
+div.container-contentAboutUs {
+  color: white;
+}
+
+div.container-contentAboutUs p.paragraphAboutUs {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+}
+
+div.container-contentAboutUs p.paragraphAboutUs span {
+  font-weight: bold;
+}
+
+/*----------------- distribution ----------------------------*/
+div.container-contentAboutUs h2.subtitleAboutUs.subtitleFirstAboutUs {
+  margin-top: 50px;
+}
+
+div.container-contentAboutUs h2.subtitleAboutUs {
+  margin-top: 25px;
+}
+
+div.container-contentAboutUs p.paragraphAboutUs {
+  margin: 15px 0 0 0;
+}
+
+div.container-contentAboutUs {
+  margin: 0 0 40px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  div.container-contentAboutUs p.paragraphAboutUs {
+    font-size: 27px;
+  }
+
+  /*----------------- distribution ----------------------------*/
+  div.container-contentAboutUs {
+    margin: 0 0 60px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /*----------------- distribution ----------------------------*/
+  div.container-contentAboutUs h2.subtitleAboutUs.subtitleFirstAboutUs {
+    margin-top: 80px;
+  }
+
+  div.container-contentAboutUs h2.subtitleAboutUs {
+    margin-top: 50px;
+  }
+
+  div.container-contentAboutUs {
+    margin: 0 0 90px 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /*----------------- distribution ----------------------------*/
+  div.container-contentAboutUs p.paragraphAboutUs {
+    margin: 20px 0 0 0;
+  }
+
+  div.container-contentAboutUs {
+    margin: 0;
+  }
+}

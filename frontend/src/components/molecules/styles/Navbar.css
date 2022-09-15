@@ -1,0 +1,201 @@
+/* -------------------------- button style ---------------------------------- */
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar button.navbar-toggler span.navbar-icon div.barButton {
+  width: 46px;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 7px;
+  border-radius: 10px;
+
+  transition: 1000ms all;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.navbar button.navbar-toggler span.navbar-icon div.barButton:last-child {
+  margin-bottom: 0px;
+}
+
+/* animation */
+.navbar button.navbar-toggler:hover span.navbar-icon div.barButton {
+  background-color: #ef1d69;
+}
+
+.navbar button.navbar-toggler:hover span.navbar-icon div.barButton:first-child {
+  -webkit-transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
+}
+
+.navbar button.navbar-toggler:hover span.navbar-icon div.barButton:last-child {
+  -webkit-transform: translate3d(0, 3px, 0);
+  transform: translate3d(0, 3px, 0);
+}
+
+.navbar button.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.navbar button.navbar-toggler:focus span.navbar-icon div.barButton:first-child {
+  -webkit-transform: translate3d(0, 12px, 0);
+  transform: translate3d(0, 12px, 0);
+}
+
+.navbar button.navbar-toggler:focus span.navbar-icon div.barButton:last-child {
+  -webkit-transform: translate3d(0, -12px, 0);
+  transform: translate3d(0, -12px, 0);
+}
+
+/* -------------------------- distribution ---------------------------------- */
+.nav-item .nav-link {
+  text-align: right !important;
+}
+
+nav.navbar,
+div.container-fluid,
+button.navbar-toggler,
+a.navbar-brand,
+div.collapse,
+ul.navbar-nav,
+li.nav-item,
+a.nav-link {
+  margin: 0px;
+  padding: 0px;
+}
+
+img.navbarLogo {
+  width: 48px;
+  height: 49px;
+}
+
+ul.navbar-nav {
+  margin: 10px 0 0 0;
+}
+
+ul.navbar-nav li.nav-item {
+  margin: 0 0 10px 0;
+}
+
+ul.navbar-nav li.nav-item:last-child {
+  margin: 0;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:link {
+  color: white;
+}
+
+ul.navbar-nav li.nav-item:hover a.nav-link,
+ul.navbar-nav li.nav-item a.nav-link:focus,
+ul.navbar-nav li.nav-item a.nav-link.active {
+  cursor: pointer;
+  color: #ef1d69;
+}
+
+/* Media Querys */
+@media only screen and (min-width: 768px) {
+  /* -------------------------- button style ---------------------------------- */
+  .navbar button.navbar-toggler span.navbar-icon div.barButton {
+    width: 60px;
+    height: 7px;
+    margin-bottom: 9px;
+    border-radius: 15px;
+  }
+
+  /* animation */
+  .navbar
+    button.navbar-toggler:hover
+    span.navbar-icon
+    div.barButton:first-child {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  .navbar
+    button.navbar-toggler:hover
+    span.navbar-icon
+    div.barButton:last-child {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  .navbar
+    button.navbar-toggler:focus
+    span.navbar-icon
+    div.barButton:first-child {
+    -webkit-transform: translate3d(0, 16px, 0);
+    transform: translate3d(0, 16px, 0);
+  }
+
+  .navbar
+    button.navbar-toggler:focus
+    span.navbar-icon
+    div.barButton:last-child {
+    -webkit-transform: translate3d(0, -16px, 0);
+    transform: translate3d(0, -16px, 0);
+  }
+
+  /* -------------------------- distribution ---------------------------------- */
+  img.navbarLogo {
+    width: 103px;
+    height: 105px;
+  }
+
+  ul.navbar-nav {
+    margin: 0;
+  }
+
+  ul.navbar-nav li.nav-item {
+    margin: 0 0 15px 0;
+  }
+
+  ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* -------------------------- distribution ---------------------------------- */
+  img.navbarLogo {
+    width: 94px;
+    height: 96px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* -------------------------- distribution ---------------------------------- */
+  ul.navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  ul.navbar-nav li.nav-item {
+    margin: 0 33px 0 0;
+  }
+
+  ul.navbar-nav li.nav-item:last-child {
+    margin: 0;
+  }
+
+  div.navbar-collapse {
+    flex-basis: auto;
+    order: 2;
+    margin: 0 33px 0 0;
+  }
+
+  button.navbar-toggler {
+    order: 3;
+  }
+}

@@ -1,0 +1,176 @@
+div.row.rowTestimonyList button {
+  display: none;
+}
+
+div.row.rowTestimonyList,
+div.row.rowTestimonyList div.col {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.row.rowTestimonyList div.col div.card {
+  margin: 0px 0px 20px 0px;
+}
+
+div.row.rowTestimonyList div.col div.card:last-child {
+  margin: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  /* tooltip */
+  .tooltipTestimony {
+    width: auto !important;
+  }
+
+  /* button */
+  div.row.rowTestimonyList {
+    position: relative;
+  }
+
+  div.row.rowTestimonyList button {
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    border-radius: 50%;
+    background-color: #021859;
+    border: none;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 800ms all;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+
+  div.row.rowTestimonyList button img.arrowImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  div.row.rowTestimonyList button:focus {
+    background-color: #021859;
+  }
+
+  div.row.rowTestimonyList button:hover {
+    background-color: #0b9ed9;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  div.row.rowTestimonyList button.left {
+    margin-left: -35px;
+  }
+
+  div.row.rowTestimonyList button.rigth {
+    right: -35px;
+  }
+
+  /* distribution */
+
+  div.row.rowTestimonyList div.listOfTestimonies {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 0px 20px 0px;
+
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  div.row.rowTestimonyList div.col div.card {
+    margin: 0px 20px 0px 0px;
+  }
+
+  /* scrollbar */
+  div.row.rowTestimonyList div.listOfTestimonies::-webkit-scrollbar {
+    height: 10px;
+    background-color: none;
+  }
+  div.row.rowTestimonyList div.listOfTestimonies::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  div.row.rowTestimonyList div.listOfTestimonies::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #021859;
+    background-image: -webkit-linear-gradient(
+      0deg,
+      transparent,
+      #0b9ed9 100%,
+      transparent,
+      transparent
+    );
+  }
+
+  /* hover */
+  div.card {
+    transition: 800ms all;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+
+  div.listOfTestimonies:hover div.card {
+    opacity: 0.5;
+  }
+
+  div.card:hover ~ div.card {
+    -webkit-transform: translate3d(288px, 0, 0);
+    transform: translate3d(288px, 0, 0);
+  }
+
+  div.listOfTestimonies:hover div.card:hover {
+    opacity: 1;
+    -webkit-transform: scaleX(2);
+    -ms-transform: scaleX(2);
+    transform: scaleX(2);
+
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  div.listOfTestimonies:hover div.card:hover > * {
+    -webkit-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+  }
+
+  /* content --- hover */
+  div.listOfTestimonies:hover div.card:hover div.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 526px;
+    margin: 20px 20px 20px -118px;
+    padding: 0px;
+  }
+
+  div.listOfTestimonies:hover div.card::-webkit-scrollbar {
+    width: 3px;
+    background-color: none;
+  }
+  div.listOfTestimonies:hover div.card::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  div.listOfTestimonies:hover div.card::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  div.listOfTestimonies:hover div.card:hover div.secret-info {
+    display: none;
+  }
+
+  div.listOfTestimonies:hover div.card:hover div.container-testimonyInfo {
+    display: block;
+  }
+
+  div.listOfTestimonies:hover div.card:hover div.container-clientInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

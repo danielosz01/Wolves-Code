@@ -1,0 +1,103 @@
+/* ---------------------------form----------------------------- */
+/* input */
+div.form-row div.form-group {
+  margin: 0 0 15px 0;
+}
+
+div.form-row div.form-group input,
+div.form-row div.form-group textarea {
+  border: 1px solid #021859;
+  border-radius: 10px;
+  padding: 12px 15px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #021859 !important;
+}
+
+/* buttons */
+form div.row button.buttonReset {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: none;
+  margin-left: auto;
+}
+
+/* steps */
+div.row div.stepsContainer {
+  display: none;
+}
+
+/* Media Querys */
+@media only screen and (min-width: 768px) {
+  /* input */
+  div.form-row div.form-group {
+    margin: 0 0 20px 0;
+  }
+
+  div.form-row div.form-group:last-child {
+    margin: 0 0 30px 0;
+  }
+
+  div.form-row div.form-group input,
+  div.form-row div.form-group textarea {
+    border-radius: 31px;
+    padding: 15px 20px;
+
+    font-size: 20px;
+  }
+
+  div.form-row div.form-group textarea {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* input */
+  div.form-row div.form-group {
+    margin: 0 0 15px 0;
+  }
+
+  div.form-row div.form-group input,
+  div.form-row div.form-group textarea {
+    border-radius: 10px;
+    padding: 12px 15px;
+
+    font-size: 15px;
+  }
+
+  /* steps */
+  div.row div.stepsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+  }
+
+  div.row div.stepsContainer h1.stepsTitle,
+  div.row div.stepsContainer span.stepsNumber,
+  div.row div.stepsContainer p.stepsParagrahp {
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+  }
+
+  div.row div.stepsContainer h1.stepsTitle {
+    font-weight: 300;
+    font-size: 30px;
+    color: #021859;
+  }
+
+  div.row div.stepsContainer span.stepsNumber {
+    font-weight: 900;
+    font-size: 30px;
+    color: #021859;
+  }
+
+  div.row div.stepsContainer p.stepsParagrahp {
+    font-weight: 300;
+    font-size: 22px;
+    color: #000000;
+  }
+}

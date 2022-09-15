@@ -1,0 +1,175 @@
+/* card */
+div.card {
+  border-radius: 10px;
+  cursor: default;
+}
+
+/* hide secret-info */
+div.card-body div.secret-info {
+  display: none;
+}
+
+/* quotes */
+div.card-body div.container-testimonyInfo img {
+  width: 30px;
+  height: 30px;
+}
+
+/* p */
+div.card-body div.container-testimonyInfo p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+
+  margin: 0px;
+}
+
+/* distribution */
+div.container-testimonyInfo {
+  width: 100%;
+}
+
+div.card-body {
+  padding: 20px 20px 20px 30px;
+}
+
+div.card-body div.container-testimonyInfo img.quotes {
+  margin: 0px 0px 10px -10px;
+}
+
+div.card-body div.container-testimonyInfo p {
+  margin-bottom: 20px;
+}
+
+div.card-body div.container-testimonyInfo {
+  margin-bottom: 10px;
+}
+
+/* media querys */
+@media only screen and (min-width: 768px) {
+  /* card */
+  div.card {
+    border-radius: 20px;
+  }
+
+  /* quotes */
+  div.card-body div.container-testimonyInfo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* p */
+  div.card-body div.container-testimonyInfo p {
+    font-size: 25px;
+  }
+
+  /* distribution */
+  div.card-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.container-testimonyInfo {
+    width: 50%;
+  }
+
+  div.card-body {
+    padding: 30px 30px 30px 50px;
+  }
+
+  div.card-body div.container-testimonyInfo img.quotes {
+    margin: 0px 0px 10px -20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* card */
+  div.card {
+    min-width: 288px;
+    max-width: 289px;
+    min-height: 480px;
+    max-height: 481px;
+
+    border-radius: 10px;
+  }
+
+  /* quotes */
+  div.card-body div.container-testimonyInfo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* p */
+  div.card-body div.container-testimonyInfo p {
+    font-size: 20px;
+  }
+
+  /* distribution */
+  div.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 30px;
+  }
+
+  div.card-body div.container-testimonyInfo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  div.card-body div.container-testimonyInfo img.quotes {
+    margin: 0px 0px 10px -10px;
+  }
+
+  div.card-body div.container-testimonyInfo p {
+    margin-bottom: 20px;
+  }
+
+  /* hide content */
+  div.card-body div.container-testimonyInfo,
+  div.card-body div.container-clientInfo {
+    display: none;
+  }
+
+  /* secret-info */
+  div.card-body div.secret-info {
+    display: block;
+    margin: 30px 0px 0px 0px;
+  }
+
+  div.card-body div.secret-info h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+
+    margin: 0px 0px 17px 0px;
+  }
+
+  div.card-body div.secret-info div.container-logoImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* card */
+  div.card {
+    min-width: 284px;
+    max-width: 285px;
+  }
+
+  /* secret-info */
+  div.card-body div.secret-info {
+    margin: 50px 0px 0px 0px;
+  }
+
+  div.card-body div.secret-info div.container-logoImg {
+    width: 110px;
+    height: 110px;
+  }
+}
